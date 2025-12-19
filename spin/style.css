@@ -1,0 +1,27 @@
+body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  border: 10px solid transparent;
+  border-top: 10px solid #0CCFFF;
+  border-right: 10px solid #0CCFFF;
+  border-radius: 50%;
+  animation: julian 1s linear infinite;
+  box-shadow: 
+    0 0 20px #0CCFFF,
+    0 0 40px #0CCFFF,
+    0 0 60px #0CCFFF,
+    inset 0 0 20px #0CCFFF; /* brillo interno */
+}
+@keyframes julian {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
